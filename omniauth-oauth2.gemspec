@@ -1,8 +1,14 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+$:.push File.expand_path('../lib/oauth2/lib', __FILE__)
 require "omniauth-oauth2/version"
 
 Gem::Specification.new do |gem|
+  gem.add_dependency 'faraday', ['>= 0.8', '< 0.12']
+  gem.add_dependency 'jwt', '~> 1.0'
+  gem.add_dependency 'multi_json', '~> 1.3'
+  gem.add_dependency 'multi_xml', '~> 0.5'
+  gem.add_dependency 'rack', ['>= 1.2', '< 3']
   gem.add_dependency "oauth2", github: 'proleadsio/oauth2'
   gem.add_dependency "omniauth",   "~> 1.2"
 
