@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'multi_json', '~> 1.3'
   gem.add_dependency 'multi_xml', '~> 0.5'
   gem.add_dependency 'rack', ['>= 1.2', '< 3']
-  gem.add_dependency "oauth2", github: 'proleadsio/oauth2'
+  #gem.add_dependency "oauth2", github: 'proleadsio/oauth2'
   gem.add_dependency "omniauth",   "~> 1.2"
 
   gem.add_development_dependency "bundler", "~> 1.0"
